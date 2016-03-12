@@ -19,6 +19,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'picardy.fontawesome',
+    'textAngular'
   ])
     .config(function ($routeProvider) {
         // $locationProvider.html5Mode(true);
@@ -28,10 +29,10 @@ angular
                 controller: 'MainCtrl',
                 controllerAs: 'main'
             })
-            .when('/about', {
-                templateUrl: 'views/about.html',
-                controller: 'AboutCtrl',
-                controllerAs: 'about'
+            .when('/essay', {
+                templateUrl: 'views/essay.html',
+                controller: 'EssayCtrl',
+                controllerAs: 'essay'
             })
             .otherwise({
                 redirectTo: '/'

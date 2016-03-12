@@ -2,16 +2,17 @@
 
 /**
  * @ngdoc function
- * @name essayApp.controller:AboutCtrl
+ * @name essayApp.controller:EssayCtrl
  * @description
- * # AboutCtrl
+ * # EssayCtrl
  * Controller of the essayApp
  */
 angular.module('essayApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
+    .controller('EssayCtrl', function ($scope) {
+        this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+        $scope.text = "TEST ME!"
+    });
